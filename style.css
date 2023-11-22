@@ -1,0 +1,59 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=League+Spartan:wght@100;600&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Bebas Neue, sans-serif;
+    background: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin: 1.2rem 0 1rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.5rem;
+
+}
+
+.loader {
+    border: 2px solid red;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader > img {
+    position: fixed;
+    /* margin: 20% 0 0 50%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.image-container {
+    border: 1px solid red;
+    margin: 0.8rem 30%;
+}
+
+.image-container > img {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 0.7rem;
+    }
+
+    .image-container {
+        margin: 0.8rem;
+    }
+}
